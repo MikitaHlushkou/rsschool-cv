@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Resume</title>
+</head>
+<body>
+<div class="wrapper">
+  <main>
+    <h1>Resume</h1>
+    <div class="contacts">
+
+      <div class="contacts-data">
+        <div><h2>Mikita Hlushkou </h2></div>
+        <div>
+          <div>
+            <h3>Contact Info</h3>
+          </div>
+          <div>
+            <ul class="list">
+              <li><b>Phone:</b> +375 (29) 286-94-36</li>
+              <li><b> Vk: </b> <a href="https://vk.com/shepardsr2"> vk.com/shepardsr2 </a> </li>
+              <li><b> Email:</b> mikita.hlushkou@gmail.com </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <figure class="contacts-photo">
+        <img src="images/photo.jpg" alt="" height="150" width='120'>
+      </figure>
+    </div>
+    <hr>
+    <div class="summary">
+      <h3>Summary</h3>
+      <p>My personal goal at this moment is to extend my knowledge of programming to get a job offer. I need this cause programming for my opinion is very interesting and always evolving, so you never get bored. That's why I want it to be my future profession.
+</p>
+    </div>
+    <hr>
+    <div class="skills">
+      <h3>Skills</h3>
+<p>Knowledge at basic level of:</p>
+      <ul>
+        <li>JS</li>
+        <li>HTML/CSS</li>
+        <li>Agile methology</li>
+        <li>Git</li>
+        <li>Node.js</li>
+      </ul>
+    </div>
+    <hr>
+    <div class="code-examples">
+      <h3>Code examples</h3>
+      <p>small part of telegram bot on js</p>
+      <code>
+          bot.on('message', (msg) => {
+            var order = '/start';
+            if (msg.text.toString().toLowerCase().indexOf(order) === 0 && canMainMenu ) {
+              bot.sendMessage(msg.chat.id, 'Здравствуйте '+ msg.from.first_name +' выберите интересующий вас пункт меню',  {
+                reply_markup: {
+                  inline_keyboard: [
+                    [
+          {
+            text: 'Каталог',
+            callback_data: 'catalog'
+
+          }
+          ]}})
+      </code>
+    </div>
+    <hr>
